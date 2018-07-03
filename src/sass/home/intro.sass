@@ -1,0 +1,33 @@
+.intro
+  background: url('../img/home-png/intro-bg.png') no-repeat
+  background-size: cover
+  background-position: 50% 50%
+  height: 500px
+  position: relative
+  display: flex
+  justify-content: flex-end
+  &:before
+    content: ''
+    position: absolute
+    bottom: 0
+    left: 0
+    height: 12px
+    width: 100%
+    background-image: linear-gradient(to left, $bright-sky-blue-two, $seafoam-blue)
+  &__block
+    width: 50%
+    height: 100%
+    +center-column
+    padding-left: 30px
+    background: rgba(0, 0, 0, 0.4)
+    h1
+      font-size: 60px
+      font-weight: bold
+      text-align: left
+      color: $white
+      margin-bottom: 30px
+    &__btn
+      display: flex
+      width: 100%
+      a:last-child
+        margin-left: 30px

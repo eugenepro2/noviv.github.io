@@ -9,7 +9,16 @@
   font-style: normal;
 }
 
-$icon-facebook: "\EA01";
+$icon-checkbox-active: "\EA01";
+$icon-checkbox: "\EA02";
+$icon-down-arrow: "\EA03";
+$icon-fb: "\EA04";
+$icon-instagram: "\EA05";
+$icon-left-arrow: "\EA06";
+$icon-logo-author: "\EA07";
+$icon-ok: "\EA08";
+$icon-right-arrow: "\EA09";
+$icon-vk: "\EA0A";
 
 
 %icon {
@@ -28,4 +37,13 @@ $icon-facebook: "\EA01";
   display: inline-block;
 }
 
-.icon-facebook:before { content: $icon-facebook; }
+.icon-checkbox-active:before { content: $icon-checkbox-active; }
+.icon-checkbox:before { content: $icon-checkbox; }
+.icon-down-arrow:before { content: $icon-down-arrow; }
+.icon-fb:before { content: $icon-fb; }
+.icon-instagram:before { content: $icon-instagram; }
+.icon-left-arrow:before { content: $icon-left-arrow; }
+.icon-logo-author:before { content: $icon-logo-author; }
+.icon-ok:before { content: $icon-ok; }
+.icon-right-arrow:before { content: $icon-right-arrow; }
+.icon-vk:before { content: $icon-vk; }

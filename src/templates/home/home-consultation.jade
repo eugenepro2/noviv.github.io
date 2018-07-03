@@ -1,0 +1,29 @@
+section.home-consultation
+  .container
+    .row
+      .col-xs-7
+        .heading
+          h2 Бесплатная консультация
+        form(action="").form
+          .form__input
+            label(for="text") Имя
+            input(type="text" id="text" placeholder="Имя")
+          .form__input
+            label(for="tel") Телефон
+            input(type="text" id="tel" placeholder="Телефон").phone
+          .form__select
+            label Желаемая дата
+            select
+              option(value="1") __/__/____
+              option(value="2") 11/11/2018
+              option(value="3") 13/01/2018
+          input(type="submit" value="Запись на консультацию").btn
+          .form__checkbox
+            input(type="checkbox" id="checkbox")
+            label(for="checkbox")
+              i.icon.icon-checkbox
+              i.icon.icon-checkbox-active
+              | Я согласен на 
+              a(href="#") обработку персональных данных. 
+      .col-xs-5
+        img(src="img/home-png/doctor.png", alt="")

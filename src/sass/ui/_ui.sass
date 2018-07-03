@@ -1,0 +1,148 @@
+html
+body
+  font-family: 'DINRoundPro', serif
+  font-size: 18px
+  box-sizing: border-box
+  position: relative
+.container
+  width: 100% !important
+  max-width: 1110px
+  box-sizing: border-box
+  +r(1024)
+    padding: 0 15px
+a
+  text-decoration: none
+  transition: all 0.3s
+
+.heading
+  margin-bottom: 50px
+  h2
+    font-size: 40px
+    font-weight: bold
+    letter-spacing: 0.3px
+    text-align: center
+    color: $bright-sky-blue-two
+.btn
+  height: 60px
+  width: 255px
+  +center
+  display: inline-flex
+  font-size: 18px
+  font-weight: bold
+  letter-spacing: 0.3px
+  color: $white
+  border-radius: 100px
+  text-transform: uppercase
+  &-primary
+    background-color: $seafoam-blue
+  &-secondary
+  &-white
+    background-color: transparent
+    border: 2px solid $white
+// .swiper-container
+//   width: 100%
+//   height: 100%
+// .swiper-button-prev, .swiper-button-next
+//   background: none !important
+//   i
+//     font-size: 36px
+//     color: $white
+
+.form
+  &__input
+    margin-bottom: 15px
+    border-bottom: 2px solid #bdbfc0
+    input
+      font-size: 18px
+      letter-spacing: 0.8px
+      color: $warm-grey-two
+      padding: 8px 0
+      background: none
+      width: 100%
+      letter-spacing: 1.5px
+    label
+      font-size: 12px
+      letter-spacing: 0.6px
+      color: $greyish
+  &__select
+    border-bottom: 2px solid #bdbfc0
+    label
+      font-size: 12px
+      letter-spacing: 0.6px
+      color: $greyish
+      margin-bottom: 8px
+      display: block
+    .selectize-input
+      background: none
+      border: none
+      box-shadow: none
+      padding: 0
+      padding-bottom: 3px
+      transition: all 0.3s
+      border-radius: 0
+      &:after
+        transition: all 0.3s
+      &.input-active
+        box-shadow: none
+        background: none !important
+      input
+        display: none !important
+    .selectize-input.items.has-options.full.has-items
+      &:after
+        content: '\EA03'
+        font-family: 'iconfont'
+        border: none
+        top: 30%
+        right: 0
+        font-size: 15px
+        color: $warm-grey-two
+        width: 16px
+        height: 15px
+      &.focus.input-active.dropdown-active:after
+        transform: rotate(180deg)
+    .selectize-dropdown
+      border: 1px solid $bright-sky-blue-two
+      border-top: none
+    .selectize-input>*, .selectize-dropdown [data-selectable]
+      font-size: 18px
+      letter-spacing: 0.8px
+      color: $warm-grey-two
+    .selectize-dropdown .active
+      background: $white
+      color: $bright-sky-blue-two
+  .btn
+    width: 100%
+    background-color: $bright-sky-blue-two
+    margin: 35px 0
+  &__checkbox
+    width: 100%
+    +center
+    input
+      display: none
+      & + label
+        font-size: 12px
+        font-weight: normal
+        font-style: normal
+        font-stretch: normal
+        line-height: normal
+        letter-spacing: 0.4px
+        text-align: left
+        color: $greyish
+        padding-left: 30px
+        position: relative
+        a
+          color: $azure
+        i
+          position: absolute
+          left: 0
+          top: 0
+          font-size: 15px
+          +tr
+          &.icon-checkbox-active
+            opacity: 0
+    input:checked + label
+      i.icon-checkbox
+        opacity: 0
+      i.icon-checkbox-active
+        opacity: 1
+
