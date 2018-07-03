@@ -1,0 +1,35 @@
+.home-about
+  padding: 65px 0
+  p
+    font-size: 18px
+    text-align: center
+    color: $greyish-brown-four
+    margin-bottom: 50px
+  &__content
+    position: relative
+    left: 50%
+    transform: translate(-50%)
+    max-width: 920px
+  &__video
+    height: 520px
+    border-radius: 30px
+    background: #444
+    position: relative
+    a
+      position: absolute
+      width: 100%
+      height: 100%
+      +center
+      i
+        width: 95px
+        height: 95px
+        display: block
+        border-radius: 100%
+        background: $bright-sky-blue-two
+        font-size: 95px
+        color: $white
+        +tr
+      &:hover
+        i
+          color: rgba($white, 0.5)
+          background: rgba($bright-sky-blue-two, 0.7)

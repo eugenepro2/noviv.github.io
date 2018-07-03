@@ -14,6 +14,7 @@ a
   text-decoration: none
   transition: all 0.3s
 
+
 .heading
   margin-bottom: 50px
   h2
@@ -22,6 +23,8 @@ a
     letter-spacing: 0.3px
     text-align: center
     color: $bright-sky-blue-two
+
+
 .btn
   height: 60px
   width: 255px
@@ -36,17 +39,27 @@ a
   &-primary
     background-color: $seafoam-blue
   &-secondary
+    padding: 20px 0
+    border: 2px solid $bright-sky-blue-two
+    color: $bright-sky-blue-two
   &-white
     background-color: transparent
     border: 2px solid $white
-// .swiper-container
-//   width: 100%
-//   height: 100%
-// .swiper-button-prev, .swiper-button-next
-//   background: none !important
-//   i
-//     font-size: 36px
-//     color: $white
+
+
+.swiper-container
+  width: 100%
+  height: 100%
+.swiper-button-prev, .swiper-button-next
+  background: none !important
+  i
+    font-size: 36px
+    color: $bright-sky-blue-two
+.swiper-pagination-bullet
+  background-color: $bright-sky-blue-two-40
+  opacity: 1
+.swiper-pagination-bullet-active
+  background: $bright-sky-blue-two
 
 .form
   &__input
@@ -110,6 +123,8 @@ a
     .selectize-dropdown .active
       background: $white
       color: $bright-sky-blue-two
+
+
   .btn
     width: 100%
     background-color: $bright-sky-blue-two
