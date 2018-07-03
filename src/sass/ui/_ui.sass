@@ -47,19 +47,31 @@ a
     border: 2px solid $white
 
 
-.swiper-container
-  width: 100%
-  height: 100%
-.swiper-button-prev, .swiper-button-next
-  background: none !important
-  i
-    font-size: 36px
-    color: $bright-sky-blue-two
-.swiper-pagination-bullet
-  background-color: $bright-sky-blue-two-40
-  opacity: 1
-.swiper-pagination-bullet-active
-  background: $bright-sky-blue-two
+.swiper
+  position: relative
+  &-container
+    padding-bottom: 60px
+    width: 100%
+    height: 100%
+  &-button-prev
+    left: -60px
+    top: 43%
+    background: none !important
+    i
+      font-size: 36px
+      color: $bright-sky-blue-two
+  &-button-next
+    right: -60px
+    top: 43%
+    background: none !important
+    i
+      font-size: 36px
+      color: $bright-sky-blue-two
+  &-pagination-bullet
+    background-color: $bright-sky-blue-two-40
+    opacity: 1
+    &-active
+      background: $bright-sky-blue-two
 
 .form
   &__input
