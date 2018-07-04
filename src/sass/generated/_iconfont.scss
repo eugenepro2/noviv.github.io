@@ -17,9 +17,10 @@ $icon-instagram: "\EA05";
 $icon-left-arrow: "\EA06";
 $icon-logo-author: "\EA07";
 $icon-ok: "\EA08";
-$icon-play: "\EA09";
-$icon-right-arrow: "\EA0A";
-$icon-vk: "\EA0B";
+$icon-paper: "\EA09";
+$icon-play: "\EA0A";
+$icon-right-arrow: "\EA0B";
+$icon-vk: "\EA0C";
 
 
 %icon {
@@ -46,6 +47,7 @@ $icon-vk: "\EA0B";
 .icon-left-arrow:before { content: $icon-left-arrow; }
 .icon-logo-author:before { content: $icon-logo-author; }
 .icon-ok:before { content: $icon-ok; }
+.icon-paper:before { content: $icon-paper; }
 .icon-play:before { content: $icon-play; }
 .icon-right-arrow:before { content: $icon-right-arrow; }
 .icon-vk:before { content: $icon-vk; }

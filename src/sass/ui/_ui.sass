@@ -173,3 +173,33 @@ a
       i.icon-checkbox-active
         opacity: 1
 
+  
+.breadcrumbs
+  background: #f8f8f8
+  height: 80px
+  .container
+    height: 100%
+  ul
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    height: 100%
+  li
+    a
+      font-size: 18px
+      color: $bright-sky-blue-two
+      padding-right: 15px
+      i
+        font-size: 16px
+        position: relative
+        right: -7px
+    &:last-child
+      i
+        display: none
+    &:first-child
+      text-transform: uppercase
+      a
+        font-weight: bold
+        line-height: 1.28
+      i
+        font-weight: 900
