@@ -1,0 +1,75 @@
+---
+title: Вопрос врачу
+---
+extends layouts/_layout
+block content
+  +breadcrumbs(['НОВИВ', 'Вопрос врачу'])
+  .question
+    .container
+      .row
+        .col-xs-9
+          h1 Вопрос врачу
+        .col-xs-3
+          a(href="#").btn.btn-primary оставить отзыв
+    .question__content
+      .container
+        .row
+          .col-xs-9
+            .question__client
+              h4 Мария
+              span 30.12.2017
+              p Обратилась в Новив в полном отчаянии — пародонтоз совсем замучил, толком не могла есть, страшно было чистить зубы — шатались, боялась, что выпадет в процессе чистки. Думала, пойду в больницу, мне все удалят, вставят съемный протез, и буду я как дряхлая старуха с зубами в стакане. НО! В Новив сказали, что удалить никогда не поздно, можно попробовать сохранить зубы. Путь был долгим и сложным — шинирование, кюретаж карманов, потом несколько сеансов вектора, параллельно местная терапия. В результате зубы пока на месте, не шатаются, оголенные шейки накрылись десной, могу улыбаться. Спасибо огромное. 
+              b Лечащий врач: Девляшкина Екатерина Александровна
+          .col-xs-3
+          .col-xs-9.col-xs-offset-3
+            .question__clinic
+              .question__clinic__title
+                .question__clinic__title__img
+                  img(src="img/team/team-1.png", alt="")
+                .question__clinic__title__text
+                  h4 Новичков Сергей Юрьевич
+                  span
+                    i Челюстно-лицевой хирург, имплантолог
+                    | 07.01.2018
+              p Спасибо за Ваш отзыв. Рады, что Вы снова довольны своей улыбкой. Проходите ежегодный осмотр у стоматолога и зубы Вам еще послужат долго!
+          .col-xs-9
+            .question__client
+              h4 Мария
+              span 30.12.2017
+              p Обратилась в Новив в полном отчаянии — пародонтоз совсем замучил, толком не могла есть, страшно было чистить зубы — шатались, боялась, что выпадет в процессе чистки. Думала, пойду в больницу, мне все удалят, вставят съемный протез, и буду я как дряхлая старуха с зубами в стакане. НО! В Новив сказали, что удалить никогда не поздно, можно попробовать сохранить зубы. Путь был долгим и сложным — шинирование, кюретаж карманов, потом несколько сеансов вектора, параллельно местная терапия. В результате зубы пока на месте, не шатаются, оголенные шейки накрылись десной, могу улыбаться. Спасибо огромное. 
+              b Лечащий врач: Девляшкина Екатерина Александровна
+          .col-xs-3
+          .col-xs-9.col-xs-offset-3
+            .question__clinic
+              h4 Клиника НОВИВ
+              span 07.01.2018
+              p Спасибо за Ваш отзыв. Рады, что Вы снова довольны своей улыбкой. Проходите ежегодный осмотр у стоматолога и зубы Вам еще послужат долго!
+          .col-xs-12.center-xs
+            a(href="#").btn.btn-primary еще отзывы
+    .question__video
+      .container
+        h2 Видеоотзывы
+        .swiper
+          .swiper-container.swiper-reviews
+            .swiper-wrapper
+              .swiper-slide
+                img(src="img/gallery/gallery-12.png", alt="")
+                a(href="#")
+                  i.icon.icon-play
+              .swiper-slide
+                img(src="img/gallery/gallery-12.png", alt="")
+                a(href="#")
+                  i.icon.icon-play
+              .swiper-slide
+                img(src="img/gallery/gallery-12.png", alt="")
+                a(href="#")
+                  i.icon.icon-play
+              .swiper-slide
+                img(src="img/gallery/gallery-12.png", alt="")
+                a(href="#")
+                  i.icon.icon-play
+            .swiper-pagination.swiper-pagination-reviews
+          .swiper-button-next.swiper-reviews-next
+            i.icon.icon-right-arrow
+          .swiper-button-prev.swiper-reviews-prev
+            i.icon.icon-left-arrow

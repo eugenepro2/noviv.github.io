@@ -85,6 +85,7 @@ a
       background: none
       width: 100%
       letter-spacing: 1.5px
+      +placeholder-color($warm-grey-two)
     label
       font-size: 12px
       letter-spacing: 0.6px
@@ -135,6 +136,8 @@ a
     .selectize-dropdown .active
       background: $white
       color: $bright-sky-blue-two
+    .selectize-dropdown [data-selectable]
+      padding: 10px 0
 
 
   .btn

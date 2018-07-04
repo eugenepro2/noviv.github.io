@@ -1,0 +1,89 @@
+.question
+  padding-top: 50px
+  h1
+    font-size: 40px
+    font-weight: bold
+    text-align: left
+    color: $bright-sky-blue-two
+    margin-bottom: 50px
+  h2
+    font-size: 24px
+    font-weight: bold
+    text-align: center
+    color: $bright-sky-blue-four
+    margin-bottom: 50px
+  .btn
+    background-color: $pink
+    box-shadow: 0 12px 20px 0 rgba(255, 142, 197, 0.1)
+    display: inline-flex
+    width: 255px
+  &__content
+    h4
+      font-family: 'DINRoundPro-Medi'
+      font-size: 24px
+      color: $black
+      margin-bottom: 12px
+    span
+      font-size: 12px
+      color: $black
+      margin-bottom: 35px
+      display: inline-block
+    p
+      font-size: 18px
+      line-height: 1.56
+      color: $black
+      margin-bottom: 50px
+    b
+      font-family: 'DINRoundPro-Medi'
+      font-size: 18px
+      display: flex
+      justify-content: flex-end
+      color: $black
+  &__client
+    padding: 30px
+    border-radius: 30px
+    background-color: rgba(0, 177, 255, 0.15)
+    margin-bottom: 25px
+  &__clinic
+    padding: 30px
+    border-radius: 30px
+    background-color: #e8fff4
+    margin-bottom: 50px
+    &__title
+      +center-y
+      margin-bottom: 20px
+      &__img
+        width: 80px
+        height: 80px
+        overflow: hidden
+        border-radius: 100%
+        margin-right: 15px
+        img
+          width: 100%
+      &__text
+        span
+          margin-bottom: 0
+          i
+            display: block
+            font-style: normal
+  &__video
+    margin-top: 50px
+    background-color: #f8f8f8
+    padding: 50px 0
+    .swiper-slide
+      overflow: hidden
+      border-radius: 30px
+      +center
+      position: relative
+      height: 205px
+      img
+        width: 100%
+      a
+        position: absolute
+        width: 50px
+        height: 50px
+        +center
+        border-radius: 100%
+        background: $bright-sky-blue-two
+        font-size: 40px
+        color: $white
