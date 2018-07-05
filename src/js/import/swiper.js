@@ -47,3 +47,35 @@ var swiper = new Swiper('.swiper-reviews', {
     clickable: true,
   },
 });
+
+
+
+//doctor--qualification
+
+var swiper = new Swiper('.swiper-doctor--qualification', {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  navigation: {
+    nextEl: '.swiper-doctor--qualification-next',
+    prevEl: '.swiper-doctor--qualification-prev',
+  },
+  pagination: {
+    el: '.swiper-pagination-doctor--qualification',
+    clickable: true,
+  },
+});
+
+//doctor--reviews
+
+var swiper = new Swiper('.swiper-doctor--reviews', {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  navigation: {
+    nextEl: '.swiper-doctor--reviews-next',
+    prevEl: '.swiper-doctor--reviews-prev',
+  },
+  pagination: {
+    el: '.swiper-pagination-doctor--reviews',
+    clickable: true,
+  },
+});

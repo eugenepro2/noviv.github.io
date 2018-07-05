@@ -1,5 +1,5 @@
 .footer
-  background-image: linear-gradient(281deg, $bright-sky-blue-two, #00d6ff)
+  background-image: linear-gradient(to right, #00d9ff, $bright-sky-blue-two)
   &__top
   &__title
     padding: 50px 0
@@ -15,6 +15,10 @@
         transform: rotate(180deg)
         margin-left: 25px
         font-weight: 900
+        +tr
+      &.active
+        i
+          transform: rotate(0)
     ul
       display: flex
       justify-content: space-between
@@ -22,6 +26,39 @@
         font-size: 18px
         font-weight: bold
         color: $white
+  &__services
+    display: none
+    &__block
+      padding-bottom: 50px
+    h4
+      padding-bottom: 25px
+      a
+        font-size: 24px
+        font-weight: bold
+        color: $white
+    ul.none
+      display: none
+    li
+      padding-bottom: 10px
+      a
+        font-family: 'DINRoundPro-Medi'
+        font-size: 18px
+        color: $white
+    a.open
+      font-family: 'DINRoundPro-Medi'
+      font-size: 18px
+      line-height: 1.11
+      color: rgba(255, 255, 255, 0.6)
+      span
+        +tr
+      i
+        font-size: 15px
+        margin-left: 15px
+        position: relative
+        top: 2px
+      &.active
+        i
+          transform: rotate(-180deg)
   &__content
     border-top-left-radius: 30px
     border-top-right-radius: 30px
