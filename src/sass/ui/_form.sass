@@ -1,7 +1,6 @@
 .form
   &__input
     margin-bottom: 15px
-    border-bottom: 2px solid #bdbfc0
     input
       font-size: 18px
       letter-spacing: 0.8px
@@ -11,6 +10,12 @@
       width: 100%
       letter-spacing: 1.5px
       +placeholder-color($warm-grey-two)
+      border-bottom: 2px solid #bdbfc0
+      +tr
+      &[type="text"]:focus
+        border-bottom: 2px solid $bright-sky-blue-two
+      &[type="tel"]:invalid
+        border-bottom: 2px solid #fc6466
     label
       font-size: 12px
       letter-spacing: 0.6px

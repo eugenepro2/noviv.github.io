@@ -1,0 +1,181 @@
+---
+title: Акции
+---
+extends layouts/_layout
+block content
+  .action
+    .action__head
+      .container
+        .row
+          .col-xs-12
+            h1 Имплантат Nobel Biocare<br> за 49 000 рублей под ключ до 30 апреля
+          .col-xs-6.end-xs
+            ul
+              li Консультация имплантолога
+              li План лечения
+              li Установка имплантата
+              li Наложение швов
+              li Анестезия
+              li Имплантат
+          .col-xs-6.start-xs
+            ul
+              li Снятие слепков
+              li Абатмент
+              li Коронка металлокерамическая с<br> винтовой фиксацией
+              li Фиксация коронки
+              li Контрольный осмотр
+              li Формирователь десны
+          .col-xs-12.center-xs
+            a(href="#").btn.btn-primary Запись к врачу
+    .action__advantages
+      .container
+        .row
+          .col-xs-12
+            h2 Преимущества установки импланта в НОВИВ
+          .col-xs-4
+            .action__advantages__block
+              img(src="img/home/impl.svg", alt="")
+              span 100% гарантия
+              p Предоставляем пожизненную гарантию на работы — в случае выпадения импланта (вероятность 1 к 100) мы установим Вам другой бесплатно.
+          .col-xs-4
+            .action__advantages__block
+              img(src="img/home/impl.svg", alt="")
+              span 100% гарантия
+              p Предоставляем пожизненную гарантию на работы — в случае выпадения импланта (вероятность 1 к 100) мы установим Вам другой бесплатно.
+          .col-xs-4
+            .action__advantages__block
+              img(src="img/home/impl.svg", alt="")
+              span 100% гарантия
+              p Предоставляем пожизненную гарантию на работы — в случае выпадения импланта (вероятность 1 к 100) мы установим Вам другой бесплатно.
+    .action__doc
+      .container
+        h2 Хирург-имплантолог
+        .row
+          .col-xs-2
+            .action__doc__img
+              img(src="img/team/team-1.png", alt="")
+          .col-xs-10
+            .action__doc__info
+              h3 Новичков Сергей Юрьевич
+              span Челюстно-лицевой хирург, имплантолог
+              p Закончил Тверскую государственную медицинскую академию Интернатура, ординатура, аспирантура в отделении челюстно-лицевой и реконструктивной хирургии центрального научно-исследовательского института стоматологии и челюстно-лицевой хирургии (ЦНИИС-ЧЛХ)
+              a(href="#").btn.btn-primary записаться на прием
+              a(href="#").btn.btn-pink ВСЕ врачи
+    .action__foto
+      .container
+        h2 Фото до и после
+        .swiper
+          .swiper-container.swiper-action_foto
+            .swiper-wrapper
+              .swiper-slide
+                .action__foto__img
+                  img(src="img/team/team-1.png", alt="")
+              .swiper-slide
+                .action__foto__img
+                  img(src="img/team/team-1.png", alt="")
+              .swiper-slide
+                .action__foto__img
+                  img(src="img/team/team-1.png", alt="")
+              .swiper-slide
+                .action__foto__img
+                  img(src="img/team/team-1.png", alt="")
+              .swiper-slide
+                .action__foto__img
+                  img(src="img/team/team-1.png", alt="")
+            .swiper-pagination.swiper-pagination-action_foto
+          .swiper-button-next.swiper-action_foto-next
+            i.icon.icon-right-arrow
+          .swiper-button-prev.swiper-action_foto-prev
+            i.icon.icon-left-arrow
+    .action__installation
+      .container
+        h2 Какие импланты мы устанавливаем
+        .row.middle-xs
+          .col-xs-2
+            .action__installation__img
+              img(src="img/team/team-1.png", alt="")
+          .col-xs-10
+            .action__installation__info
+              span Установка всего 49 000
+                i.icon.icon-rub
+              p Имплантат NobelReplace Conical Connection с коническим соединением сочетает проверенное корневидное тело имплантата с герметичным соединением и обеспечивает оптимальную эстетику при любых показаниях.
+    .action__saving
+      .container
+        .row
+          .col-xs-12  
+            h2 Узнайте как сэкономить до 25 000 рублей на каждом импланте
+            form
+              .action__saving__phone
+                p Укажите телефон:
+                input(type="tel" placeholder="+7 (___) ___-__-__").phone
+              input(type="submit" value="получить скидку 10%").btn.btn-primary
+    .action__new-tooth
+      .container
+        .row.center-xs
+          .col-xs-10.start-xs
+            h2 Сколько стоит новый зуб «под ключ»? Цена нового зуба (имплант + коронка) складывается из 4 составляющих:
+            .row
+              .col-xs-8
+                .action__new-tooth__block 
+                  .action__new-tooth__block__img
+                    img(src="img/impandmater.png", alt="")
+                  .action__new-tooth__block__text
+                    h3 Имплант и материалы
+                    p 99 % клиник приобретают у производителей импланты, абатменты и формирователя по одной и той же цене. Экономить на закупке невозможно при всем желании. Мы предлагаем нашим пациентам выбор от недорогих систем (Alpha Bio) до швейцарских премиум-имплантов (Astra Tech).
+              .col-xs-8.col-xs-offset-4
+                .action__new-tooth__block 
+                  .action__new-tooth__block__img
+                    img(src="img/impandmater.png", alt="")
+                  .action__new-tooth__block__text
+                    h3 Имплант и материалы
+                    p 99 % клиник приобретают у производителей импланты, абатменты и формирователя по одной и той же цене. Экономить на закупке невозможно при всем желании. Мы предлагаем нашим пациентам выбор от недорогих систем (Alpha Bio) до швейцарских премиум-имплантов (Astra Tech).
+              .col-xs-8
+                .action__new-tooth__block 
+                  .action__new-tooth__block__img
+                    img(src="img/impandmater.png", alt="")
+                  .action__new-tooth__block__text
+                    h3 Имплант и материалы
+                    p 99 % клиник приобретают у производителей импланты, абатменты и формирователя по одной и той же цене. Экономить на закупке невозможно при всем желании. Мы предлагаем нашим пациентам выбор от недорогих систем (Alpha Bio) до швейцарских премиум-имплантов (Astra Tech).
+              .col-xs-8.col-xs-offset-4
+                .action__new-tooth__block 
+                  .action__new-tooth__block__img
+                    img(src="img/impandmater.png", alt="")
+                  .action__new-tooth__block__text
+                    h3 Имплант и материалы
+                    p 99 % клиник приобретают у производителей импланты, абатменты и формирователя по одной и той же цене. Экономить на закупке невозможно при всем желании. Мы предлагаем нашим пациентам выбор от недорогих систем (Alpha Bio) до швейцарских премиум-имплантов (Astra Tech).
+    include ./home/consultation
+    .about__video
+      .container
+        .row.center-xs
+          .col-xs-8.start-xs
+            h2 Стоматология НОВИВ
+            .about__video__block
+              img(src="img/video.png", alt="")
+              a(href="#")
+                i.icon.icon-play
+    .action__reward
+      .container
+        h2 Награды
+        .swiper
+          .swiper-container.swiper-reward
+            .swiper-wrapper
+              .swiper-slide
+                .action__reward__img
+                  img(src="img/team/team-1.png", alt="")
+              .swiper-slide
+                .action__reward__img
+                  img(src="img/team/team-1.png", alt="")
+              .swiper-slide
+                .action__reward__img
+                  img(src="img/team/team-1.png", alt="")
+              .swiper-slide
+                .action__reward__img
+                  img(src="img/team/team-1.png", alt="")
+              .swiper-slide
+                .action__reward__img
+                  img(src="img/team/team-1.png", alt="")
+            .swiper-pagination.swiper-pagination-reward
+          .swiper-button-next.swiper-reward-next
+            i.icon.icon-right-arrow
+          .swiper-button-prev.swiper-reward-prev
+            i.icon.icon-left-arrow

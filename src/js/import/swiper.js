@@ -107,3 +107,36 @@ var swiper = new Swiper('.swiper-article', {
     clickable: true,
   },
 });
+
+
+//action_foto
+
+var swiper = new Swiper('.swiper-action_foto', {
+  slidesPerView: 4,
+  spaceBetween: 30,
+  navigation: {
+    nextEl: '.swiper-action_foto-next',
+    prevEl: '.swiper-action_foto-prev',
+  },
+  pagination: {
+    el: '.swiper-pagination-action_foto',
+    clickable: true,
+  },
+});
+
+
+
+//reward
+
+var swiper = new Swiper('.swiper-reward', {
+  slidesPerView: 4,
+  spaceBetween: 30,
+  navigation: {
+    nextEl: '.swiper-reward-next',
+    prevEl: '.swiper-reward-prev',
+  },
+  pagination: {
+    el: '.swiper-pagination-reward',
+    clickable: true,
+  },
+});
