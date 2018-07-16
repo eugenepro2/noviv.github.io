@@ -183,8 +183,36 @@ h1
         opacity: 0
       i.icon-checkbox-active
         opacity: 1
-
-  
+  &-secondary
+    .form__input
+      border-bottom: 2px solid $white
+      input
+        color: $white
+        +placeholder-color($white)
+      label
+        color: $white
+    .selectize-input.items.has-options.full.has-items
+      &:after
+        color: $white
+    .selectize-dropdown
+      border: 1px solid $white
+    .selectize-input>*
+      color: $white
+    .form__select
+      border-bottom: 2px solid $white
+      label
+        color: $white
+    .btn
+      border: 2px solid $white
+      color: $white
+      background: transparent
+    .form__checkbox
+      input + label
+        color: $white
+        a
+          color: $white
+          text-decoration: underline
+    
 .breadcrumbs
   background: #f8f8f8
   height: 80px

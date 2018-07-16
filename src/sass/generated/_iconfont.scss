@@ -20,7 +20,8 @@ $icon-ok: "\EA08";
 $icon-paper: "\EA09";
 $icon-play: "\EA0A";
 $icon-right-arrow: "\EA0B";
-$icon-vk: "\EA0C";
+$icon-rub: "\EA0C";
+$icon-vk: "\EA0D";
 
 
 %icon {
@@ -50,4 +51,5 @@ $icon-vk: "\EA0C";
 .icon-paper:before { content: $icon-paper; }
 .icon-play:before { content: $icon-play; }
 .icon-right-arrow:before { content: $icon-right-arrow; }
+.icon-rub:before { content: $icon-rub; }
 .icon-vk:before { content: $icon-vk; }

@@ -1,0 +1,85 @@
+.services-page
+  &__content
+    h1
+      margin: 50px 0 25px
+      text-align: left
+    h2
+      font-size: 24px
+      font-weight: bold
+      color: $bright-sky-blue-two
+    &__block
+      border-radius: 30px
+      position: relative
+      background-size: cover
+      background-position: 50% 50%
+      overflow: hidden
+      &-gradient
+        width: 100%
+        height: 100%
+        background-image: linear-gradient(106deg, rgba(0, 177, 255, 0.72), rgba(255, 150, 195, 0.56))
+        padding: 20px 30px
+      p
+        font-size: 24px
+        color: $white
+        margin-bottom: 25px
+      b
+        font-size: 40px
+        font-weight: bold
+        color: $white
+        margin-bottom: 35px
+        display: block
+        i
+          font-size: 30px
+      span
+        font-size: 18px
+        color: $white
+        display: block
+    &__article
+      padding-bottom: 50px
+      p, li
+        font-size: 18px
+        line-height: 1.56
+        color: $black
+        margin-top: 25px
+      &__img
+        border-radius: 20px
+        overflow: hidden
+        margin-top: 25px
+        img
+          +object-fit(cover)
+          height: 320px
+          width: 100%
+      li
+        position: relative
+        padding-left: 30px
+        &:before
+          content: ''
+          position: absolute
+          left: 0
+          top: 10px
+          width: 6px
+          height: 6px
+          background: $bright-sky-blue-two
+          border-radius: 100%
+    .prices__content
+      padding: 0px 0 50px
+      h2
+        margin-top: 0
+    &__form
+      border-radius: 30px
+      background-image: linear-gradient(299deg, $seafoam-blue, #6ccbfb)
+      padding: 30px
+      position: relative
+      margin-bottom: 50px
+      h2
+        font-size: 24px
+        font-weight: normal
+        color: $white
+        margin-bottom: 50px
+      img
+        max-width: 295px
+        position: absolute
+        right: 40px
+        bottom: 0
+    &__img
+      

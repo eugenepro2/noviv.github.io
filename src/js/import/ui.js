@@ -26,3 +26,16 @@ $('.footer__services__block .open').on('click', function() {
   $(this).prev().slideToggle();
   $(this).toggleClass('active');
 });
+
+
+//prices-service
+$('[data-service-list]').on('click', function() {
+  event.preventDefault();
+  $(this).prev().toggleClass('active');
+  $(this).toggleClass('active');
+  if($(this).hasClass('active')) {
+    $(this).find('span').text('Свернуть цены');
+  } else {
+    $(this).find('span').text('Развернуть цены');
+  }
+});
