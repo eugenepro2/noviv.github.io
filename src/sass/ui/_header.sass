@@ -1,4 +1,51 @@
 .header
+  +r(767)
+    height: 80px
+    padding: 20px 0
+  &-secondary
+    position: relative
+    +center
+    height: 100%
+    img
+      height: 30px
+    .menu-open
+      position: absolute
+      left: 20px
+      top: 10px
+      width: 30px
+      height: 30px
+      z-index: 99
+      span
+        width: 30px
+        height: 2px
+        margin-top: 10px
+        background: $bright-sky-blue-two
+        display: block
+        border-radius: 4px
+        &:before, &:after
+          content: ''
+          width: 20px
+          height: 2px
+          background: $bright-sky-blue-two
+          position: absolute
+          left: 0
+          border-radius: 4px
+        &:before
+          top: 0
+        &:after
+          bottom: 8px
+    .tel
+      position: absolute
+      right: 15px
+      top: 5px
+      i
+        color: $bright-sky-blue-two
+        font-size: 30px
+  .btn
+    +r(1040)
+      width: auto
+      padding: 0 15px
+      font-size: 16px
   &__content
     height: 160px
     padding: 30px 0
@@ -10,10 +57,14 @@
       letter-spacing: 0.3px
       color: $greyish-brown
       margin-bottom: 7px
+      +r(1024)
+        font-size: 18px
     span
       font-size: 16px
       letter-spacing: 0.3px
       color: $warm-grey
+      +r(1024)
+        font-size: 13.5px
   &__tel
     a
       font-size: 24px
@@ -22,6 +73,8 @@
       color: $azure
       display: inline-block
       padding-bottom: 15px
+      +r(1024)
+        font-size: 18px
       &:last-child
         padding-bottom: 0
   &__nav

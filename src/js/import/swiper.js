@@ -13,6 +13,44 @@ var swiper = new Swiper('.swiper-shares', {
     el: '.swiper-pagination-shares',
     clickable: true,
   },
+  breakpoints: {
+    1024: {
+      slidesPerView: 1,
+      spaceBetween: 30
+    }
+  }
+});
+
+//home-advantages
+
+var swiper = new Swiper('.swiper-advantages', {
+  slidesPerView: 4,
+  spaceBetween: 30,
+  navigation: {
+    nextEl: '.swiper-advantages-next',
+    prevEl: '.swiper-advantages-prev',
+  },
+  pagination: {
+    el: '.swiper-pagination-advantages',
+    clickable: true,
+  },
+  breakpoints: {
+    // when window width is <= 320px
+    550: {
+      slidesPerView: 1,
+      spaceBetween: 10
+    },
+    // when window width is <= 480px
+    767: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+    // when window width is <= 640px
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 30
+    }
+  }
 });
 
 
@@ -29,6 +67,16 @@ var swiper = new Swiper('.swiper-gallery', {
     el: '.swiper-pagination-gallery',
     clickable: true,
   },
+  breakpoints: {
+    767: {
+      slidesPerView: 1,
+      spaceBetween: 30
+    },
+    1024: {
+      slidesPerView: 2,
+      spaceBetween: 30
+    }
+  }
 });
 
 
@@ -63,13 +111,23 @@ var swiper = new Swiper('.swiper-doctor--qualification', {
     el: '.swiper-pagination-doctor--qualification',
     clickable: true,
   },
+  breakpoints: {
+    767: {
+      slidesPerView: 2,
+      spaceBetween: 30
+    },
+    660: {
+      slidesPerView: 1,
+      spaceBetween: 30
+    }
+  }
 });
 
 //doctor--reviews
 
 var swiper = new Swiper('.swiper-doctor--reviews', {
   slidesPerView: 1,
-  spaceBetween: 10,
+  spaceBetween: 30,
   navigation: {
     nextEl: '.swiper-doctor--reviews-next',
     prevEl: '.swiper-doctor--reviews-prev',
@@ -122,6 +180,20 @@ var swiper = new Swiper('.swiper-action_foto', {
     el: '.swiper-pagination-action_foto',
     clickable: true,
   },
+  breakpoints: {
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 30
+    },
+    767: {
+      slidesPerView: 2,
+      spaceBetween: 30
+    },
+    660: {
+      slidesPerView: 1,
+      spaceBetween: 30
+    }
+  }
 });
 
 
@@ -139,4 +211,18 @@ var swiper = new Swiper('.swiper-reward', {
     el: '.swiper-pagination-reward',
     clickable: true,
   },
+  breakpoints: {
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 30
+    },
+    767: {
+      slidesPerView: 2,
+      spaceBetween: 30
+    },
+    660: {
+      slidesPerView: 1,
+      spaceBetween: 30
+    }
+  }
 });

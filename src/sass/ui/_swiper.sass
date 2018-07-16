@@ -1,23 +1,34 @@
 .swiper
   position: relative
+  width: 100%
   &-container
     padding-bottom: 60px
     width: 100%
     height: 100%
+    +r(1250)
+      padding: 0 30px 60px
   &-button-prev
     left: -60px
     top: 43%
     background: none !important
+    +r(1250)
+      left: -8px
     i
       font-size: 36px
       color: $bright-sky-blue-two
+      +r(767)
+        font-size: 28px
   &-button-next
     right: -60px
     top: 43%
     background: none !important
+    +r(1250)
+      right: 0
     i
       font-size: 36px
       color: $bright-sky-blue-two
+      +r(767)
+        font-size: 28px
   &-pagination-bullet
     background-color: $bright-sky-blue-two-40
     opacity: 1

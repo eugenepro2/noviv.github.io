@@ -1,5 +1,7 @@
 .prices
   padding: 50px 0
+  +r(767)
+    padding: 35px 0
   &__content
     max-width: 730px
     width: 100%
@@ -8,6 +10,8 @@
     a
       margin-top: 25px
       text-transform: none
+      +r(767)
+        margin-top: 15px
       &.active
         i
           transform: rotate(180deg)
@@ -30,6 +34,8 @@
       color: $bright-sky-blue-two
       margin-bottom: 25px
       margin-top: 50px
+      +r(767)
+        margin: 35px 0 20px
     p
       font-size: 14px
       color: #8c8c8c
@@ -38,6 +44,8 @@
       position: relative
       z-index: -1
       border-bottom: 1px dotted $black
+      +r(767)
+        border-bottom: 1px dashed $black
       span
         font-size: 18px
         line-height: 1.56
@@ -51,6 +59,7 @@
           position: relative
           bottom: -5px
           padding-right: 5px
+          margin-right: 80px
         &.value
           position: absolute
           right: 0

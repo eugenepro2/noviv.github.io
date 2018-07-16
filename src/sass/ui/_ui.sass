@@ -8,21 +8,26 @@ body
   width: 100% !important
   max-width: 1110px
   box-sizing: border-box
-  +r(1024)
+  +r(1140)
     padding: 0 15px
 a
   text-decoration: none
   transition: all 0.3s
-
+.flex
+  display: flex
 
 .heading
   margin-bottom: 50px
+  +r(767)
+    margin-bottom: 30px
   h2
     font-size: 40px
     font-weight: bold
     letter-spacing: 0.3px
     text-align: center
     color: $bright-sky-blue-two
+    +r(767)
+      font-size: 24px
 
 
 .btn
@@ -52,6 +57,16 @@ a
 
 
 
++r(767)
+	.hidden-xs
+		display: none !important
+@media only screen and (min-width: 768px) and (max-width: 1024px)
+	.hidden-sm
+		display: none !important
++rmin(1024)
+	.hidden-md
+		display: none !important
+
 
 
 h1
@@ -59,6 +74,8 @@ h1
   font-weight: bold
   text-align: center
   color: $bright-sky-blue-two
+  +r(767)
+    font-size: 24px
 
 
 .breadcrumbs

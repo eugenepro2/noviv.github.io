@@ -24,7 +24,7 @@ block content
     .doctor__qualification
       .container
         .row.center-xs
-          .col-xs-8.start-xs
+          .col-md-8.col-xs-12.start-xs
             h2 Квалификация
             p Закончил Тверскую государственную медицинскую академию Интернатура на базе Московского медико-стоматологического университета Ординатура по ортопедической стоматологии ФУВ МОНИКИ 
             p Стаж с 2001 года.
@@ -33,13 +33,20 @@ block content
               .swiper-container.swiper-doctor--qualification
                 .swiper-wrapper
                   .swiper-slide
-                    img(src="img/team/team-3.png", alt="")
+                    .doctor__qualification__img
+                      img(src="img/team/team-3.png", alt="")
                   .swiper-slide
-                    img(src="img/team/team-3.png", alt="")
+                    .doctor__qualification__img
+                      img(src="img/team/team-3.png", alt="")
                   .swiper-slide
-                    img(src="img/team/team-3.png", alt="")
+                    .doctor__qualification__img
+                      img(src="img/team/team-3.png", alt="")
                   .swiper-slide
-                    img(src="img/team/team-3.png", alt="")
+                    .doctor__qualification__img
+                      img(src="img/team/team-3.png", alt="")
+                  .swiper-slide
+                    .doctor__qualification__img
+                      img(src="img/team/team-3.png", alt="")
                 .swiper-pagination.swiper-pagination-doctor--qualification
               .swiper-button-next.swiper-doctor--qualification-next
                 i.icon.icon-right-arrow
@@ -48,7 +55,7 @@ block content
     .doctor__text
       .container
         .row.center-xs
-          .col-xs-8.start-xs
+          .col-md-8.col-xs-12.start-xs
             ul
               li Сертификат "Препарирование зубов под изготовление полных коронок",  Москва 2013г.
               li Сертификат "Interdisciplinary treatment planning and functional occlusion", Москва 2015г.
@@ -68,7 +75,7 @@ block content
     .doctor__reviews
       .container
         .row.center-xs
-          .col-xs-9.start-xs
+          .col-md-9.col-xs-12.start-xs
             h2 Отзывы о враче
             .swiper
               .swiper-container.swiper-doctor--reviews
@@ -101,16 +108,16 @@ block content
         h2 Оставьте отзыв
         form(action="").form
           .row.center-xs
-            .col-xs-9.start-xs
+            .col-md-9.col-xs-12.start-xs
               .row
-                .col-xs-5
+                .col-sm-5.col-xs-12
                   .form__input
                     label Имя
                     input(type="text" placeholder="Имя")
                   .form__input
                     label E-mail
                     input(type="email" placeholder="E-mail")
-                .col-xs-7
+                .col-sm-7.col-xs-12
                   textarea(placeholder="Ваш отзыв")
                 .col-xs-12.center-xs
                   input(type="submit" value="оставить отзыв").btn.btn-primary

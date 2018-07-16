@@ -4,19 +4,28 @@ section.home-advantages
       .col-xs-12.center-xs
         .heading
           h2 Преимущества лечения зубов в клинике НОВИВ
-      .col-xs-3
-        .home-advantages__block
-          img(src="img/home/spec.svg", alt="")
-          p Высококлассные специалисты
-      .col-xs-3
-        .home-advantages__block
-          img(src="img/home/obor.svg", alt="")
-          p Современное оборудование
-      .col-xs-3
-        .home-advantages__block
-          img(src="img/home/mone.svg", alt="")
-          p Приятные <br>цены
-      .col-xs-3
-        .home-advantages__block
-          img(src="img/home/clients.svg", alt="")
-          p Счастливые <br>клиенты
+      .swiper
+        .swiper-container.swiper-advantages
+          .swiper-wrapper
+            .swiper-slide
+              .home-advantages__block
+                img(src="img/home/spec.svg", alt="")
+                p Высококлассные специалисты
+            .swiper-slide
+              .home-advantages__block
+                img(src="img/home/obor.svg", alt="")
+                p Современное оборудование
+            .swiper-slide
+              .home-advantages__block
+                img(src="img/home/mone.svg", alt="")
+                p Приятные <br>цены
+            .swiper-slide
+              .home-advantages__block
+                img(src="img/home/clients.svg", alt="")
+                p Счастливые <br>клиенты
+          .swiper-pagination.swiper-pagination-advantages.hidden-md
+        .swiper-button-next.swiper-advantages-next.hidden-md
+          i.icon.icon-right-arrow
+        .swiper-button-prev.swiper-advantages-prev.hidden-md
+          i.icon.icon-left-arrow
+        

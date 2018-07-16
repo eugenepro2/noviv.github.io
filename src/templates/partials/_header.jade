@@ -1,6 +1,13 @@
 //BEGIN header
 header.header
-  .header__content
+  .header-secondary.hidden-sm.hidden-md
+    .menu-open
+      span
+    a(href="index.html")
+      img(src="img/home/logo-2.svg", alt="")
+    a(href="tel:+79629767812").tel
+      i.icon.icon-ok
+  .header__content.hidden-xs
     .container
       .row.middle-xs
         .col-xs-3
@@ -16,7 +23,7 @@ header.header
             a(href="tel:+74962556020") +7 (496) 255-60-20
         .col-xs-3.end-xs
           a(href="#").btn.btn-primary Запись к врачу
-  .header__nav
+  .header__nav.hidden-xs
     .container
       nav
         ul

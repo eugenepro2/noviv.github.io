@@ -68,6 +68,10 @@
         +placeholder-color($greyish)
         margin-left: 15px
         border: none
+        +r(1024)
+          margin-left: 0
+        +r(767)
+          margin-top: 20px
       &__checkbox
         a
           color: $greyish-three
@@ -89,6 +93,10 @@
           padding-left: 20px
         .selectize-dropdown [data-selectable]
           padding: 10px 0
+      .btn
+        +r(767)
+          width: 100%
+          margin-top: 55px
   &__video
     margin-top: 65px
     .swiper-slide

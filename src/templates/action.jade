@@ -9,7 +9,7 @@ block content
         .row
           .col-xs-12
             h1 Имплантат Nobel Biocare<br> за 49 000 рублей под ключ до 30 апреля
-          .col-xs-6.end-xs
+          .col-sm-6.col-xs-12.end-sm
             ul
               li Консультация имплантолога
               li План лечения
@@ -17,7 +17,7 @@ block content
               li Наложение швов
               li Анестезия
               li Имплантат
-          .col-xs-6.start-xs
+          .col-sm-6.col-xs-12.start-sm
             ul
               li Снятие слепков
               li Абатмент
@@ -32,17 +32,17 @@ block content
         .row
           .col-xs-12
             h2 Преимущества установки импланта в НОВИВ
-          .col-xs-4
+          .col-sm-4.col-xs-12
             .action__advantages__block
               img(src="img/home/impl.svg", alt="")
               span 100% гарантия
               p Предоставляем пожизненную гарантию на работы — в случае выпадения импланта (вероятность 1 к 100) мы установим Вам другой бесплатно.
-          .col-xs-4
+          .col-sm-4.col-xs-12
             .action__advantages__block
               img(src="img/home/impl.svg", alt="")
               span 100% гарантия
               p Предоставляем пожизненную гарантию на работы — в случае выпадения импланта (вероятность 1 к 100) мы установим Вам другой бесплатно.
-          .col-xs-4
+          .col-sm-4.col-xs-12
             .action__advantages__block
               img(src="img/home/impl.svg", alt="")
               span 100% гарантия
@@ -51,10 +51,10 @@ block content
       .container
         h2 Хирург-имплантолог
         .row
-          .col-xs-2
+          .col-md-2.col-sm-3.col-xs-12
             .action__doc__img
               img(src="img/team/team-1.png", alt="")
-          .col-xs-10
+          .col-md-10.col-sm-9.col-xs-12
             .action__doc__info
               h3 Новичков Сергей Юрьевич
               span Челюстно-лицевой хирург, имплантолог
@@ -91,10 +91,10 @@ block content
       .container
         h2 Какие импланты мы устанавливаем
         .row.middle-xs
-          .col-xs-2
+          .col-md-2.col-sm-3.col-xs-12
             .action__installation__img
               img(src="img/team/team-1.png", alt="")
-          .col-xs-10
+          .col-md-10.col-sm-9.col-xs-12
             .action__installation__info
               span Установка всего 49 000
                 i.icon.icon-rub
@@ -112,42 +112,70 @@ block content
     .action__new-tooth
       .container
         .row.center-xs
-          .col-xs-10.start-xs
+          .col-md-10.col-xs-12.start-xs
             h2 Сколько стоит новый зуб «под ключ»? Цена нового зуба (имплант + коронка) складывается из 4 составляющих:
             .row
-              .col-xs-8
+              .col-md-8.col-sm-10.col-xs-12
                 .action__new-tooth__block 
                   .action__new-tooth__block__img
                     img(src="img/impandmater.png", alt="")
                   .action__new-tooth__block__text
                     h3 Имплант и материалы
                     p 99 % клиник приобретают у производителей импланты, абатменты и формирователя по одной и той же цене. Экономить на закупке невозможно при всем желании. Мы предлагаем нашим пациентам выбор от недорогих систем (Alpha Bio) до швейцарских премиум-имплантов (Astra Tech).
-              .col-xs-8.col-xs-offset-4
+              .col-md-8.col-sm-10.col-xs-12.col-md-offset-4.col-sm-offset-2
                 .action__new-tooth__block 
                   .action__new-tooth__block__img
                     img(src="img/impandmater.png", alt="")
                   .action__new-tooth__block__text
                     h3 Имплант и материалы
                     p 99 % клиник приобретают у производителей импланты, абатменты и формирователя по одной и той же цене. Экономить на закупке невозможно при всем желании. Мы предлагаем нашим пациентам выбор от недорогих систем (Alpha Bio) до швейцарских премиум-имплантов (Astra Tech).
-              .col-xs-8
+              .col-md-8.col-sm-10.col-xs-12
                 .action__new-tooth__block 
                   .action__new-tooth__block__img
                     img(src="img/impandmater.png", alt="")
                   .action__new-tooth__block__text
                     h3 Имплант и материалы
                     p 99 % клиник приобретают у производителей импланты, абатменты и формирователя по одной и той же цене. Экономить на закупке невозможно при всем желании. Мы предлагаем нашим пациентам выбор от недорогих систем (Alpha Bio) до швейцарских премиум-имплантов (Astra Tech).
-              .col-xs-8.col-xs-offset-4
+              .col-md-8.col-sm-10.col-xs-12.col-md-offset-4.col-sm-offset-2
                 .action__new-tooth__block 
                   .action__new-tooth__block__img
                     img(src="img/impandmater.png", alt="")
                   .action__new-tooth__block__text
                     h3 Имплант и материалы
                     p 99 % клиник приобретают у производителей импланты, абатменты и формирователя по одной и той же цене. Экономить на закупке невозможно при всем желании. Мы предлагаем нашим пациентам выбор от недорогих систем (Alpha Bio) до швейцарских премиум-имплантов (Astra Tech).
-    include ./home/consultation
+    section.home-consultation
+      .container
+        .row
+          .col-sm-7.col-xs-12
+            .heading
+              h2 Запишись на бесплатную консультацию
+            form(action="").form
+              .form__input
+                label(for="text") Имя
+                input(type="text" id="text" placeholder="Имя")
+              .form__input
+                label(for="tel") Телефон
+                input(type="tel" id="tel" placeholder="Телефон").phone
+              .form__select
+                label Желаемая дата
+                select
+                  option(value="1") __/__/____
+                  option(value="2") 11/11/2018
+                  option(value="3") 13/01/2018
+              input(type="submit" value="Записаться").btn.btn-primary
+              .form__checkbox
+                input(type="checkbox" id="checkbox")
+                label(for="checkbox")
+                  i.icon.icon-checkbox
+                  i.icon.icon-checkbox-active
+                  | Я согласен на 
+                  a(href="#") обработку персональных данных. 
+          .col-sm-5.bottom-xs.flex.hidden-xs
+            img(src="img/home-png/doctor.png", alt="")
     .about__video
       .container
         .row.center-xs
-          .col-xs-8.start-xs
+          .col-md-8.col-xs-12.start-xs
             h2 Стоматология НОВИВ
             .about__video__block
               img(src="img/video.png", alt="")

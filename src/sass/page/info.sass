@@ -1,18 +1,20 @@
 .info
   padding-bottom: 50px
+  +r(767)
+    padding-bottom: 35px
   &__content
     h1
-      font-size: 40px
-      font-weight: bold
-      text-align: center
-      color: $bright-sky-blue-two
-      margin-bottom: 20px
+      padding-bottom: 20px
       padding-top: 50px
+      +r(767)
+        padding: 35px 0 0
     p
       font-size: 18px
       line-height: 1.56
       color: $black
       padding-top: 30px
+      +r(767)
+        padding-top: 15px
     h3
       font-size: 24px
       font-weight: bold
@@ -44,6 +46,8 @@
     a
       +center-y
       margin-top: 30px
+      +r(767)
+        margin-top: 20px
       span
         color: $black
         font-size: 18px
