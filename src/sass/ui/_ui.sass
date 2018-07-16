@@ -47,31 +47,6 @@ a
     border: 2px solid $white
 
 
-.swiper
-  position: relative
-  &-container
-    padding-bottom: 60px
-    width: 100%
-    height: 100%
-  &-button-prev
-    left: -60px
-    top: 43%
-    background: none !important
-    i
-      font-size: 36px
-      color: $bright-sky-blue-two
-  &-button-next
-    right: -60px
-    top: 43%
-    background: none !important
-    i
-      font-size: 36px
-      color: $bright-sky-blue-two
-  &-pagination-bullet
-    background-color: $bright-sky-blue-two-40
-    opacity: 1
-    &-active
-      background: $bright-sky-blue-two
 
 
 h1
@@ -81,138 +56,6 @@ h1
   color: $bright-sky-blue-two
 
 
-.form
-  &__input
-    margin-bottom: 15px
-    border-bottom: 2px solid #bdbfc0
-    input
-      font-size: 18px
-      letter-spacing: 0.8px
-      color: $warm-grey-two
-      padding: 8px 0
-      background: none
-      width: 100%
-      letter-spacing: 1.5px
-      +placeholder-color($warm-grey-two)
-    label
-      font-size: 12px
-      letter-spacing: 0.6px
-      color: $greyish
-  &__select
-    border-bottom: 2px solid #bdbfc0
-    label
-      font-size: 12px
-      letter-spacing: 0.6px
-      color: $greyish
-      margin-bottom: 8px
-      display: block
-    .selectize-input
-      background: none
-      border: none
-      box-shadow: none
-      padding: 0
-      padding-bottom: 3px
-      transition: all 0.3s
-      border-radius: 0
-      &:after
-        transition: all 0.3s
-      &.input-active
-        box-shadow: none
-        background: none !important
-      input
-        display: none !important
-    .selectize-input.items.has-options.full.has-items
-      &:after
-        content: '\EA03'
-        font-family: 'iconfont'
-        border: none
-        top: 30%
-        right: 0
-        font-size: 15px
-        color: $warm-grey-two
-        width: 16px
-        height: 15px
-      &.focus.input-active.dropdown-active:after
-        transform: rotate(180deg)
-    .selectize-dropdown
-      border: 1px solid $bright-sky-blue-two
-      border-top: none
-    .selectize-input>*, .selectize-dropdown [data-selectable]
-      font-size: 18px
-      letter-spacing: 0.8px
-      color: $warm-grey-two
-    .selectize-dropdown .active
-      background: $white
-      color: $bright-sky-blue-two
-    .selectize-dropdown [data-selectable]
-      padding: 10px 0
-
-
-  .btn
-    width: 100%
-    background-color: $bright-sky-blue-two
-    margin: 35px 0
-  &__checkbox
-    width: 100%
-    +center
-    input
-      display: none
-      & + label
-        font-size: 12px
-        font-weight: normal
-        font-style: normal
-        font-stretch: normal
-        line-height: normal
-        letter-spacing: 0.4px
-        text-align: left
-        color: $greyish
-        padding-left: 30px
-        position: relative
-        a
-          color: $azure
-        i
-          position: absolute
-          left: 0
-          top: 0
-          font-size: 15px
-          +tr
-          &.icon-checkbox-active
-            opacity: 0
-    input:checked + label
-      i.icon-checkbox
-        opacity: 0
-      i.icon-checkbox-active
-        opacity: 1
-  &-secondary
-    .form__input
-      border-bottom: 2px solid $white
-      input
-        color: $white
-        +placeholder-color($white)
-      label
-        color: $white
-    .selectize-input.items.has-options.full.has-items
-      &:after
-        color: $white
-    .selectize-dropdown
-      border: 1px solid $white
-    .selectize-input>*
-      color: $white
-    .form__select
-      border-bottom: 2px solid $white
-      label
-        color: $white
-    .btn
-      border: 2px solid $white
-      color: $white
-      background: transparent
-    .form__checkbox
-      input + label
-        color: $white
-        a
-          color: $white
-          text-decoration: underline
-    
 .breadcrumbs
   background: #f8f8f8
   height: 80px
@@ -242,3 +85,42 @@ h1
         line-height: 1.28
       i
         font-weight: 900
+
+.team__block
+  background: #e8fff4
+  border-radius: 30px
+  padding: 45px 40px
+  +tr
+  margin-right: 15px
+  width: calc(100% - 15px)
+  margin-bottom: 30px
+  +center-column
+  &:hover
+    background: $seafoam-blue
+    h3, p, a
+      color: $white
+    a
+      border: 2px solid $white
+  &__img
+    overflow: hidden
+    width: 200px
+    height: 200px
+    border-radius: 100%
+  h3
+    font-family: 'DINRoundPro-Medi'
+    font-size: 24px
+    text-align: center
+    color: $black
+    margin-top: 50px
+    +tr
+  p
+    font-size: 18px
+    text-align: center
+    color: rgba(0, 0, 0, 0.41)
+    margin-top: 15px
+    margin-bottom: 60px
+    +tr
+  a
+    width: 100%
+    padding: 0
+    border: 2px solid $seafoam-blue

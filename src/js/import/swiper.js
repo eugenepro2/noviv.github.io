@@ -79,3 +79,31 @@ var swiper = new Swiper('.swiper-doctor--reviews', {
     clickable: true,
   },
 });
+
+
+//services-page doc
+
+var swiper = new Swiper('.swiper-doc', {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  navigation: {
+    nextEl: '.swiper-doc-next',
+    prevEl: '.swiper-doc-prev',
+  },
+});
+
+
+//article
+
+var swiper = new Swiper('.swiper-article', {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  navigation: {
+    nextEl: '.swiper-article-next',
+    prevEl: '.swiper-article-prev',
+  },
+  pagination: {
+    el: '.swiper-pagination-article',
+    clickable: true,
+  },
+});

@@ -1,0 +1,132 @@
+.form
+  &__input
+    margin-bottom: 15px
+    border-bottom: 2px solid #bdbfc0
+    input
+      font-size: 18px
+      letter-spacing: 0.8px
+      color: $warm-grey-two
+      padding: 8px 0
+      background: none
+      width: 100%
+      letter-spacing: 1.5px
+      +placeholder-color($warm-grey-two)
+    label
+      font-size: 12px
+      letter-spacing: 0.6px
+      color: $greyish
+  &__select
+    border-bottom: 2px solid #bdbfc0
+    label
+      font-size: 12px
+      letter-spacing: 0.6px
+      color: $greyish
+      margin-bottom: 8px
+      display: block
+    .selectize-input
+      background: none
+      border: none
+      box-shadow: none
+      padding: 0
+      padding-bottom: 3px
+      transition: all 0.3s
+      border-radius: 0
+      &:after
+        transition: all 0.3s
+      &.input-active
+        box-shadow: none
+        background: none !important
+      input
+        display: none !important
+    .selectize-input.items.has-options.full.has-items
+      &:after
+        content: '\EA03'
+        font-family: 'iconfont'
+        border: none
+        top: 30%
+        right: 0
+        font-size: 15px
+        color: $warm-grey-two
+        width: 16px
+        height: 15px
+      &.focus.input-active.dropdown-active:after
+        transform: rotate(180deg)
+    .selectize-dropdown
+      border: 1px solid $bright-sky-blue-two
+      border-top: none
+    .selectize-input>*, .selectize-dropdown [data-selectable]
+      font-size: 18px
+      letter-spacing: 0.8px
+      color: $warm-grey-two
+    .selectize-dropdown .active
+      background: $white
+      color: $bright-sky-blue-two
+    .selectize-dropdown [data-selectable]
+      padding: 10px 0
+
+
+  .btn
+    width: 100%
+    background-color: $bright-sky-blue-two
+    margin: 35px 0
+  &__checkbox
+    width: 100%
+    +center
+    input
+      display: none
+      & + label
+        font-size: 12px
+        font-weight: normal
+        font-style: normal
+        font-stretch: normal
+        line-height: normal
+        letter-spacing: 0.4px
+        text-align: left
+        color: $greyish
+        padding-left: 30px
+        position: relative
+        a
+          color: $azure
+        i
+          position: absolute
+          left: 0
+          top: 0
+          font-size: 15px
+          +tr
+          &.icon-checkbox-active
+            opacity: 0
+    input:checked + label
+      i.icon-checkbox
+        opacity: 0
+      i.icon-checkbox-active
+        opacity: 1
+  &-secondary
+    .form__input
+      border-bottom: 2px solid $white
+      input
+        color: $white
+        +placeholder-color($white)
+      label
+        color: $white
+    .selectize-input.items.has-options.full.has-items
+      &:after
+        color: $white
+    .selectize-dropdown
+      border: 1px solid $white
+    .selectize-input>*
+      color: $white
+    .form__select
+      border-bottom: 2px solid $white
+      label
+        color: $white
+    .btn
+      border: 2px solid $white
+      color: $white
+      background: transparent
+    .form__checkbox
+      input + label
+        color: $white
+        a
+          color: $white
+          text-decoration: underline
+    
