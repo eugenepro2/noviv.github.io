@@ -94,6 +94,16 @@ var swiper = new Swiper('.swiper-reviews', {
     el: '.swiper-pagination-reviews',
     clickable: true,
   },
+  breakpoints: {
+    767: {
+      slidesPerView: 1,
+      spaceBetween: 30
+    },
+    1024: {
+      slidesPerView: 2,
+      spaceBetween: 30
+    }
+  }
 });
 
 
@@ -148,6 +158,16 @@ var swiper = new Swiper('.swiper-doc', {
     nextEl: '.swiper-doc-next',
     prevEl: '.swiper-doc-prev',
   },
+  breakpoints: {
+    1090: {
+      slidesPerView: 2,
+      spaceBetween: 30
+    },
+    767: {
+      slidesPerView: 1,
+      spaceBetween: 30
+    }
+  }
 });
 
 
@@ -164,6 +184,16 @@ var swiper = new Swiper('.swiper-article', {
     el: '.swiper-pagination-article',
     clickable: true,
   },
+  breakpoints: {
+    1024: {
+      slidesPerView: 2,
+      spaceBetween: 30
+    },
+    767: {
+      slidesPerView: 1,
+      spaceBetween: 30
+    }
+  }
 });
 
 
@@ -225,4 +255,17 @@ var swiper = new Swiper('.swiper-reward', {
       spaceBetween: 30
     }
   }
+});
+
+
+
+//share
+
+var swiper = new Swiper('.swiper-share', {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  pagination: {
+    el: '.swiper-pagination-share',
+    clickable: true,
+  },
 });

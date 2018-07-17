@@ -1,13 +1,20 @@
 .services-page
   &__content
     margin-bottom: 50px
+    +r(767)
+      margin-bottom: 0
     h1
       margin: 50px 0 25px
       text-align: left
+      +r(767)
+        margin: 35px 0
+        text-align: center
     h2
       font-size: 24px
       font-weight: bold
       color: $bright-sky-blue-two
+      +r(767)
+        text-align: center
     &__block
       border-radius: 30px
       position: relative
@@ -37,6 +44,8 @@
         display: block
     &__article
       padding-bottom: 50px
+      +r(767)
+        padding-bottom: 35px
       p, li
         font-size: 18px
         line-height: 1.56
@@ -64,6 +73,8 @@
           border-radius: 100%
     .prices__content
       padding: 0px 0 50px
+      +r(767)
+        padding-bottom: 35px
       h2
         margin-top: 0
     &__form
@@ -72,28 +83,67 @@
       padding: 30px
       position: relative
       margin-bottom: 50px
+      +r(767)
+        margin-bottom: 35px
       h2
         font-size: 24px
         font-weight: normal
         color: $white
         margin-bottom: 50px
+        +r(767)
+          margin-bottom: 35px
       img
         max-width: 295px
         position: absolute
         right: 40px
         bottom: 0
+      .btn
+        +r(767)
+          margin-bottom: 15px
   &__swiper
     h2
       font-size: 24px
       font-weight: bold
       color: $bright-sky-blue-two
       margin-bottom: 50px
+      +r(767)
+        margin-bottom: 35px
+        text-align: center
     .team__block
       width: auto
+      +r(1100)
+        padding: 35px 40px
+      +r(767)
+        background: #5ed298
+        margin-bottom: 0
+        h3, p
+          color: $white
+        .btn
+          border: 2px solid $white
     .swiper
       margin-bottom: 50px
+      +r(767)
+        margin-bottom: 0
       i
         color: $seafoam-blue
+        +r(767)
+          color: $white
+          font-size: 30px
+          font-weight: 900
+      &-container
+        +r(767)
+          padding: 0
+      &-button-prev
+        +r(767)
+          left: 10px
+          top: 50%
+      &-button-next
+        +r(767)
+          right: 15px
+          top: 50%
+      &-pagination
+        +r(767)
+          bottom: 30px
       &-pagination-bullet
         background-color: rgba(94, 210, 152, 0.4)
         opacity: 1
@@ -124,4 +174,15 @@
             background: $bright-sky-blue-two
           &.pink
             background: $pink
-                
+    &-article
+       +r(767)
+        h2
+          margin-top: 35px
+          margin-bottom: 15px
+        .swiper
+          &-container
+            padding-bottom: 60px
+          &-button-prev
+            top: 40%
+          &-button-next
+            top: 40%

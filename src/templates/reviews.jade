@@ -7,68 +7,69 @@ block content
   .reviews
     .container
       .row
-        .col-xs-9
+        .col-md-9.col-sm-8.col-xs-12
           h1 Отзывы о стоматологической клинике НОВИВ
-        .col-xs-3
+        .col-md-3.col-sm-4.col-xs-12.end-sm.center-xs
           a(href="#").btn.btn-primary оставить отзыв
     .reviews__content
       .container
         .row
-          .col-xs-9
+          .col-sm-9.col-xs-12
             .reviews__client
-              h4 Мария
+              h2 Мария
               span 30.12.2017
               p Обратилась в Новив в полном отчаянии — пародонтоз совсем замучил, толком не могла есть, страшно было чистить зубы — шатались, боялась, что выпадет в процессе чистки. Думала, пойду в больницу, мне все удалят, вставят съемный протез, и буду я как дряхлая старуха с зубами в стакане. НО! В Новив сказали, что удалить никогда не поздно, можно попробовать сохранить зубы. Путь был долгим и сложным — шинирование, кюретаж карманов, потом несколько сеансов вектора, параллельно местная терапия. В результате зубы пока на месте, не шатаются, оголенные шейки накрылись десной, могу улыбаться. Спасибо огромное. 
               b Лечащий врач: Девляшкина Екатерина Александровна
-          .col-xs-3
-          .col-xs-9.col-xs-offset-3
+          .col-sm-3.col-xs-12
+          .col-sm-9.col-xs-12.col-sm-offset-3
             .reviews__clinic
-              h4 Клиника НОВИВ
+              h2 Клиника НОВИВ
               span 07.01.2018
               p Спасибо за Ваш отзыв. Рады, что Вы снова довольны своей улыбкой. Проходите ежегодный осмотр у стоматолога и зубы Вам еще послужат долго!
-          .col-xs-9
+          .col-sm-9.col-xs-12
             .reviews__client
-              h4 Мария
+              h2 Мария
               span 30.12.2017
               p Обратилась в Новив в полном отчаянии — пародонтоз совсем замучил, толком не могла есть, страшно было чистить зубы — шатались, боялась, что выпадет в процессе чистки. Думала, пойду в больницу, мне все удалят, вставят съемный протез, и буду я как дряхлая старуха с зубами в стакане. НО! В Новив сказали, что удалить никогда не поздно, можно попробовать сохранить зубы. Путь был долгим и сложным — шинирование, кюретаж карманов, потом несколько сеансов вектора, параллельно местная терапия. В результате зубы пока на месте, не шатаются, оголенные шейки накрылись десной, могу улыбаться. Спасибо огромное. 
               b Лечащий врач: Девляшкина Екатерина Александровна
-          .col-xs-3
-          .col-xs-9.col-xs-offset-3
+          .col-sm-3.col-xs-12
+          .col-sm-9.col-xs-12.col-sm-offset-3
             .reviews__clinic
-              h4 Клиника НОВИВ
+              h2 Клиника НОВИВ
               span 07.01.2018
               p Спасибо за Ваш отзыв. Рады, что Вы снова довольны своей улыбкой. Проходите ежегодный осмотр у стоматолога и зубы Вам еще послужат долго!
           .col-xs-12.center-xs
             a(href="#").btn.btn-primary еще отзывы
     .reviews__form
-      h2 Оставьте отзыв
-      form(action="").form
-        .row.center-xs
-          .col-xs-9.start-xs
-            .row
-              .col-xs-5
-                .form__input
-                  label Имя
-                  input(type="text" placeholder="Имя")
-                .form__input
-                  label E-mail
-                  input(type="email" placeholder="E-mail")
-                .form__select
-                  select
-                    option(value="1") Лечащий врач
-                    option(value="2") Лечащий врач1
-                    option(value="3") Лечащий врач2
-              .col-xs-7
-                textarea(placeholder="Ваш отзыв")
-              .col-xs-12.center-xs
-                input(type="submit" value="оставить отзыв").btn.btn-primary
-                .form__checkbox
-                  input(type="checkbox" id="checkbox-2")
-                  label(for="checkbox-2")
-                    i.icon.icon-checkbox
-                    i.icon.icon-checkbox-active
-                    | Я согласен на 
-                    a(href="#") обработку персональных данных.
+      .container
+        h2 Оставьте отзыв
+        form(action="").form
+          .row.center-xs
+            .col-md-9.col-xs-12.start-xs
+              .row
+                .col-md-5.col-sm-6.col-xs-12
+                  .form__input
+                    label Имя
+                    input(type="text" placeholder="Имя")
+                  .form__input
+                    label E-mail
+                    input(type="email" placeholder="E-mail")
+                  .form__select
+                    select
+                      option(value="1") Лечащий врач
+                      option(value="2") Лечащий врач1
+                      option(value="3") Лечащий врач2
+                .col-md-7.col-sm-6.col-xs-12
+                  textarea(placeholder="Ваш отзыв")
+                .col-xs-12.center-xs
+                  input(type="submit" value="оставить отзыв").btn.btn-primary
+                  .form__checkbox
+                    input(type="checkbox" id="checkbox-2")
+                    label(for="checkbox-2")
+                      i.icon.icon-checkbox
+                      i.icon.icon-checkbox-active
+                      | Я согласен на 
+                      a(href="#") обработку персональных данных.
     .reviews__video
       .container
         h2 Видеоотзывы

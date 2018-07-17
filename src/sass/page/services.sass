@@ -1,18 +1,27 @@
 .services
   h1
     padding: 50px 0 65px
+    +r(767)
+      padding: 35px 0
   &__block
     margin-bottom: 100px
+    +r(767)
+      margin-bottom: 35px
     &__img
       +center
       padding-top: 20px
+      +r(767)
+        display: none
     &__text
       max-width: 320px
-      h4
+      h2
         font-size: 24px
         font-weight: bold
         color: $black
         height: 45px
+        +r(1024)
+          height: auto
+          margin-bottom: 15px
       li
         padding-bottom: 10px
       a
