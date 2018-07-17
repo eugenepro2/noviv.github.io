@@ -9,8 +9,10 @@ html
     .out(class=outClass)
       block header
         include ../partials/_header
-      block content
+      .body
+        block content
       block footer
+        include ../partials/_pop-up
         include ../partials/_footer
     //END out
 

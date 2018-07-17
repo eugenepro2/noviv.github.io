@@ -1,0 +1,58 @@
+.entry.modal#entry
+  a(href="#" rel="modal:close").close
+    span
+  .entry__content
+    .heading
+      h2 Запись к врачу
+    form(action="").form
+      .form__input
+        label(for="text") Имя
+        input(type="text" id="text" placeholder="Имя")
+      .form__input
+        label(for="tel") Телефон
+        input(type="tel" id="tel" placeholder="Телефон").phone
+      .form__select
+        label Желаемая дата
+        select
+          option(value="1") __/__/____
+          option(value="2") 11/11/2018
+          option(value="3") 13/01/2018
+      input(type="submit" value="Записаться").btn.btn-white
+      .form__checkbox
+        input(type="checkbox" id="checkbox3")
+        label(for="checkbox3")
+          i.icon.icon-checkbox
+          i.icon.icon-checkbox-active
+          | Я согласен на 
+          a(href="#") обработку персональных данных. 
+  
+
+
+.menu
+  ul
+    li
+      a(href="services.html") Услуги
+        i.icon.icon-down-arrow
+    li
+      a(href="#") Цены
+    li
+      a(href="share.html") Акции
+    li
+      a(href="reviews.html") Отзывы
+    li
+      a(href="question.html") Вопрос врачу
+    li
+      a(href="about.html") Клиника
+        i.icon.icon-down-arrow
+    li
+      a(href="team.html") Коллектив
+    li
+      a(href="contacts.html") Контакты
+  .menu__contacts
+    a(href="#").btn.btn-white Запись к врачу
+    .menu__contacts__address
+      p г. Фрязино, пр-т Мира  д. 29
+      span Ежедневно с 9:00 до 20:00
+    .menu__contacts__tel
+      a(href="tel:+79629767812") +7 (962) 976-78-12
+      a(href="tel:+74962556020") +7 (496) 255-60-20
