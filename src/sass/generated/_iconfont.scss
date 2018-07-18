@@ -13,15 +13,17 @@ $icon-checkbox-active: "\EA01";
 $icon-checkbox: "\EA02";
 $icon-down-arrow: "\EA03";
 $icon-fb: "\EA04";
-$icon-instagram: "\EA05";
-$icon-left-arrow: "\EA06";
-$icon-logo-author: "\EA07";
-$icon-ok: "\EA08";
-$icon-paper: "\EA09";
-$icon-play: "\EA0A";
-$icon-right-arrow: "\EA0B";
-$icon-rub: "\EA0C";
-$icon-vk: "\EA0D";
+$icon-icon-phone: "\EA05";
+$icon-instagram: "\EA06";
+$icon-left-arrow: "\EA07";
+$icon-logo-author: "\EA08";
+$icon-logo-headre-mob: "\EA09";
+$icon-ok: "\EA0A";
+$icon-paper: "\EA0B";
+$icon-play: "\EA0C";
+$icon-right-arrow: "\EA0D";
+$icon-rub: "\EA0E";
+$icon-vk: "\EA0F";
 
 
 %icon {
@@ -44,9 +46,11 @@ $icon-vk: "\EA0D";
 .icon-checkbox:before { content: $icon-checkbox; }
 .icon-down-arrow:before { content: $icon-down-arrow; }
 .icon-fb:before { content: $icon-fb; }
+.icon-icon-phone:before { content: $icon-icon-phone; }
 .icon-instagram:before { content: $icon-instagram; }
 .icon-left-arrow:before { content: $icon-left-arrow; }
 .icon-logo-author:before { content: $icon-logo-author; }
+.icon-logo-headre-mob:before { content: $icon-logo-headre-mob; }
 .icon-ok:before { content: $icon-ok; }
 .icon-paper:before { content: $icon-paper; }
 .icon-play:before { content: $icon-play; }

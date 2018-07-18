@@ -19,12 +19,19 @@
     .tel
       i
         color: $white
+    img
+      &:last-child
+        display: block
+      &:first-child
+        display: none
   &-secondary
     position: relative
     +center
     height: 100%
     img
-      height: 30px
+      height: 22px
+      &:last-child
+        display: none
     .menu-open
       position: absolute
       left: 20px
@@ -73,6 +80,7 @@
       i
         color: $bright-sky-blue-two
         font-size: 30px
+        +tr
   .btn
     +r(1040)
       width: auto

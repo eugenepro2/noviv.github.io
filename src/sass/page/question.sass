@@ -43,6 +43,25 @@
     border-radius: 30px
     background-color: rgba(0, 177, 255, 0.15)
     margin-bottom: 25px
+    position: relative
+    div
+      position: absolute
+      left: 20%
+      bottom: -130px
+      background: linear-gradient(to left, #d9f4ff, #fff0f6)
+      width: 105px
+      height: 105px
+      border-radius: 100%
+      transform: rotate(-70deg)
+      &:before
+        content: ''
+        position: absolute
+        left: 2px
+        top: 0
+        border-radius: 100%
+        width: 110%
+        height: 105%
+        background: $white
     +r(767)
       margin-bottom: 15px
   &__clinic
