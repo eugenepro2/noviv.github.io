@@ -53,6 +53,18 @@
     border-radius: 30px
     background-color: $light-pink
     margin-bottom: 50px
+    position: relative
+    &:before
+      content: ''
+      width: 65px
+      height: 65px
+      position: absolute
+      top: 0
+      left: -95px
+      background: url('../img/r-1.png') no-repeat
+      background-size: cover
+      +r(767)
+        display: none
     +r(767)
       margin-bottom: 35px
   &__form
