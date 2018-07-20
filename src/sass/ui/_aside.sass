@@ -1,7 +1,12 @@
 .aside
   width: 360px
-  position: sticky
-  top: 0
+  position: relative
+  &.active
+    position: fixed
+    top: 0
+    &-2
+      position: absolute
+      bottom: 70px
   +r(1024)
     display: none
   &__block
