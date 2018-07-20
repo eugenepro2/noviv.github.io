@@ -9,8 +9,8 @@ block content
       .row
         .col-md-9.col-sm-8.col-xs-12
           h1 Отзывы о стоматологической клинике НОВИВ
-        .col-md-3.col-sm-4.col-xs-12.end-sm.center-xs
-          a(href="#").btn.btn-primary оставить отзыв
+        .col-md-3.col-sm-4.col-xs-12.end-sm.center-xs.scroll
+          a(href="#reviews__form").btn.btn-primary оставить отзыв
     .reviews__content
       .container
         .row
@@ -40,7 +40,7 @@ block content
               p Спасибо за Ваш отзыв. Рады, что Вы снова довольны своей улыбкой. Проходите ежегодный осмотр у стоматолога и зубы Вам еще послужат долго!
           .col-xs-12.center-xs
             a(href="#").btn.btn-primary еще отзывы
-    .reviews__form
+    .reviews__form#reviews__form
       .container
         h2 Оставьте отзыв
         form(action="").form

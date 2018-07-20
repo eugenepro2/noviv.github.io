@@ -264,6 +264,7 @@ var swiper = new Swiper('.swiper-reward', {
 var swiper = new Swiper('.swiper-share', {
   slidesPerView: 1,
   spaceBetween: 30,
+  speed: 1000,
   pagination: {
     el: '.swiper-pagination-share',
     clickable: true,
