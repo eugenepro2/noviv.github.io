@@ -16,7 +16,7 @@
     background-position: 50% 50%
     overflow: hidden
     margin-right: 15px
-    +tr
+    transition: all 1s
     margin-bottom: 30px
     +r(767)
       width: 100%
@@ -32,6 +32,7 @@
       background: #000
       background: rgba($duck-egg-blue, 0.8)
       position: relative
+      transition: all 1s
       +r(767)
         padding: 0
       span
@@ -52,8 +53,8 @@
         left: 0
         top: 0
         opacity: 0
-        background-image: linear-gradient(to left, rgba(0, 177, 255, 0.6), $pink)
-        +tr
+        background: rgba($duck-egg-blue, 0.8)
+        transition: all 1s
         z-index: -1
         +r(767)
           opacity: 0.85
@@ -77,19 +78,24 @@
     .swiper-slide
       transition: all 1s
       position: relative
+      z-index: -1
     +r(767)
       display: block
-    .swiper-slide-next
+    .swiper-slide-active
       position: relative
-      left: -60px
-      z-index: -1
-      transform: translate(0, 30px)
-      opacity: 0.7
+      z-index: 1
+      transform: translate(0, -30px)
       .share__block a:before
-        background: rgba($duck-egg-blue, 0.8)
+        background-image: linear-gradient(to left, rgba(0, 177, 255, 0.6), $pink)
     .swiper-slide-prev
       position: relative
-      transform: translate(0, 30px)
-      right: -60px
+      transform: translate(60px)
+      z-index: -1
+      .share__block a:before
+        background: rgba($duck-egg-blue, 0.8)
+    .swiper-slide-next
+      position: relative
+      transform: translate(-60px)
+      z-index: -1
       .share__block a:before
         background: rgba($duck-egg-blue, 0.8)

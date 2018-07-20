@@ -29,7 +29,7 @@ $('.phone').mask('+7 (999) 999-99-99');
 
 
 //footer
-$('.open-dropdown').on('click', function() {
+$('.open-dropdown').on('click', function(event) {
   event.preventDefault();
   $('.footer__services').slideToggle();
   $(this).toggleClass('active');
@@ -37,7 +37,7 @@ $('.open-dropdown').on('click', function() {
   $('html, body').animate({ scrollTop: scroll - 40}, 500, 'swing');
 });
 
-$('.footer__services__block .open').on('click', function() {
+$('.footer__services__block .open').on('click', function(event) {
   event.preventDefault();
   if($(this).hasClass('active')) {
     $(this).find('span').text('Развернуть');
@@ -50,7 +50,7 @@ $('.footer__services__block .open').on('click', function() {
 
 
 //prices-service
-$('[data-service-list]').on('click', function() {
+$('[data-service-list]').on('click', function(event) {
   event.preventDefault();
   $(this).prev().toggleClass('active');
   $(this).toggleClass('active');
