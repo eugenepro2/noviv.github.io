@@ -2,6 +2,10 @@ import '../lib/selectize.min.js';
 import '../lib/maskedinput.js';
 import modal from 'jquery-modal';
 
+
+
+
+
 //якорь
 $('.scroll').on('click','a', function(event) {
   event.preventDefault();
