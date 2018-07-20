@@ -23,6 +23,8 @@ $('.open-dropdown').on('click', function() {
   event.preventDefault();
   $('.footer__services').slideToggle();
   $(this).toggleClass('active');
+  let scroll = $(this).offset().top;
+  $('html, body').animate({ scrollTop: scroll - 50}, 500, 'swing');
 });
 
 $('.footer__services__block .open').on('click', function() {
