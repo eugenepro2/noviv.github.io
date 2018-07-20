@@ -6,5 +6,5 @@ import Stickyfill from 'stickyfilljs';
 
 
 objectFitImages();
-// var elements = $('.aside');
-// const sticky = new Stickyfill.Sticky(element);
+var elements = $('.aside');
+const sticky = new Stickyfill.Sticky(element);
