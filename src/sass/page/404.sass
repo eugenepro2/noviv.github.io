@@ -1,27 +1,34 @@
 .not-found
   height: 660px
   +center
-  &__content
-    max-width: 500px
+  +r(767)
+    height: 500px
+  .row
     width: 100%
-    display: flex
-  span
-    width: 160px
-    display: inline-block
-    font-size: 130px
-    font-family: serif
+  &__img
+    position: relative
+    img
+      &:first-child
+        position: absolute
+        left: -110px
+        +r(767)
+          position: static
+          height: 140px
+          margin-bottom: -20px
+          padding-right: 15px
   h1
-    font-size: 100px
-    font-family: serif
-    color: $bright-sky-blue-two
-  h2
     font-size: 24px
     font-weight: bold
     color: $bright-sky-blue-two
     margin-bottom: 25px
     margin-top: 50px
+    text-align: left
+    +r(767)
+      text-align: center
   p
     font-size: 18px
     line-height: 1.56
     color: $black
     max-width: 350px
+    +r(767)
+      max-width: 100%

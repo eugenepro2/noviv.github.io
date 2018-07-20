@@ -4,9 +4,12 @@ title: 404
 extends layouts/_layout
 block content
   .not-found
-    .not-found__content
-      span ):
-      .not-found__block
-        h1 404
-        h2 Страница не найдена
-        p Упс, у нас ошибка. Возможно страницы не существует. Перейдите на главную страницу или воспользуйтесь поиском по сайту.
+    .row.center-xs
+      .col-sm-2
+      .col-md-4.col-sm-5.col-xs-12.start-sm.center-xs
+        .not-found__img
+          img(src="img/(.svg", alt="")
+          img(src="img/404.svg", alt="")
+        .not-found__text
+          h1 Страница не найдена
+          p Упс, у нас ошибка. Возможно страницы не существует. Перейдите на главную страницу или воспользуйтесь поиском по сайту.
