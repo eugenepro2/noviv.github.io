@@ -1,22 +1,8 @@
 import '../lib/selectize.min.js';
 import '../lib/maskedinput.js';
 import modal from 'jquery-modal';
+import '@fancyapps/fancybox';
 
-// let aside = $('.aside').offset().top;
-// let height = $('.aside').parent('.col-xs-4').height();
-// let asideBottom = $('.aside').parent('.col-xs-4').offset().top + height;
-// $(window).on('scroll', function() {
-//   if($('body, html').scrollTop() >= aside && $('body, html').scrollTop() + $(window).height() <= asideBottom) {
-//     $('.aside').removeClass('active-2');
-//     $('.aside').addClass('active');
-//   } else if($('body, html').scrollTop() < aside) {
-//     $('.aside').removeClass('active-2');
-//     $('.aside').removeClass('active');
-//   }else {
-//     $('.aside').removeClass('active');
-//     $('.aside').addClass('active-2');
-//   }
-// });
 
 $('textarea')
   .focus(function() { 
