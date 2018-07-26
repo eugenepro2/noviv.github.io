@@ -22,8 +22,10 @@ $icon-ok: "\EA0A";
 $icon-paper: "\EA0B";
 $icon-play: "\EA0C";
 $icon-right-arrow: "\EA0D";
-$icon-rub: "\EA0E";
-$icon-vk: "\EA0F";
+$icon-rub-bold: "\EA0E";
+$icon-rub-middle: "\EA0F";
+$icon-rub: "\EA10";
+$icon-vk: "\EA11";
 
 
 %icon {
@@ -55,5 +57,7 @@ $icon-vk: "\EA0F";
 .icon-paper:before { content: $icon-paper; }
 .icon-play:before { content: $icon-play; }
 .icon-right-arrow:before { content: $icon-right-arrow; }
+.icon-rub-bold:before { content: $icon-rub-bold; }
+.icon-rub-middle:before { content: $icon-rub-middle; }
 .icon-rub:before { content: $icon-rub; }
 .icon-vk:before { content: $icon-vk; }
