@@ -18,6 +18,13 @@ import modal from 'jquery-modal';
 //   }
 // });
 
+$('textarea')
+  .focus(function() { 
+    $(this).addClass('active'); 
+  })
+  .blur(function() { 
+    $(this).removeClass('active'); 
+  });
 
 
 

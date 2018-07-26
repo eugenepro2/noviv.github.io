@@ -22,6 +22,11 @@
       background-repeat: no-repeat
       background-size: cover
       background-position: 50% 50%
+      &:before
+        content: ''
+        +coverdiv
+        background-image: linear-gradient(to right, rgba(0, 177, 255, 0.47), rgba(255, 150, 195, 0.94))
+        border-radius: 30px
       +r(767)
         height: 145px
       .home-shares__block

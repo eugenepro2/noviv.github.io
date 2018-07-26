@@ -4,8 +4,7 @@ body
   font-size: 18px
   box-sizing: border-box
   position: relative
-.out
-  overflow-x: hidden
+
 .container
   width: 100% !important
   max-width: 1110px
@@ -45,24 +44,35 @@ a
   border-radius: 100px
   text-transform: uppercase
   font-family: 'DINRoundPro'
+  +tr
   &-primary
     background-color: $seafoam-blue
+    &:hover
+      box-shadow: 0px 10px 50px rgba($seafoam-blue, 0.7)
   &-secondary
     padding: 20px 0
     border: 2px solid $bright-sky-blue-two
     color: $bright-sky-blue-two
+    &:hover
+      box-shadow: 0px 10px 50px rgba($bright-sky-blue-two, 0.7)
   &-blue
     padding: 20px 0
     border: 2px solid $bright-sky-blue-two
     color: $white
     background: $bright-sky-blue-two
+    &:hover
+      box-shadow: 0px 10px 50px rgba($bright-sky-blue-two, 0.7)
   &-white
     background-color: transparent
     border: 2px solid $white
+    &:hover
+      box-shadow: 0px 10px 50px rgba($white, 0.7)
   &-pink
     border: 2px solid $pink
     color: $white
     background: $pink
+    &:hover
+      box-shadow: 0px 10px 50px rgba($pink, 0.7)
 
 
 
@@ -176,3 +186,8 @@ h1
         +tr
         &:hover
           color: $black
+
+.aside
+  position: sticky !important
+  position: -webkit-sticky !important
+  top: 0

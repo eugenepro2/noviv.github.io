@@ -1,5 +1,14 @@
 textarea
   font-family: 'DINRoundPro'
+  +tr
+
+textarea
+  border: 2px solid transparent !important
+  &.active
+    border: 2px solid $bright-sky-blue-two !important
+.doctor__form
+  textarea
+    background: #ececec !important
 .form
   &__input
     margin-bottom: 15px
@@ -15,7 +24,7 @@ textarea
       border-bottom: 2px solid #bdbfc0
       font-family: 'DINRoundPro'
       +tr
-      &[type="text"]:focus
+      &:focus
         border-bottom: 2px solid $bright-sky-blue-two
       &[type="tel"]:invalid
         border-bottom: 2px solid #fc6466
@@ -138,6 +147,8 @@ textarea
       border: 2px solid $white
       color: $white
       background: transparent
+      &:hover
+        box-shadow: 0px 10px 50px rgba($white, 0.7)
     .form__checkbox
       input + label
         color: $white
