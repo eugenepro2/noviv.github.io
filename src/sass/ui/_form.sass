@@ -130,6 +130,8 @@ textarea
         color: $white
         +placeholder-color($white)
         border-bottom: 2px solid $white
+        &:focus
+          border-bottom: 2px solid $bright-sky-blue-two
       label
         color: $white
     .selectize-input.items.has-options.full.has-items
@@ -140,9 +142,16 @@ textarea
     .selectize-input>*
       color: $white
     .form__select
-      border-bottom: 2px solid $white
+      border: 0
       label
         color: $white
+      .selectize-input.dropdown-active::before
+        display: none
+      .selectize-input
+        border-bottom: 2px solid $white
+        padding-top: 8px
+      .focus
+        border-bottom: 2px solid $bright-sky-blue-two
     .btn
       border: 2px solid $white
       color: $white
