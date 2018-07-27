@@ -62,8 +62,8 @@
         color: $white
         +placeholder-color($white)
         border-bottom: 2px solid $white
-        &[type="text"]:focus
-          border-bottom: 2px solid $white
+        &:focus
+          border-bottom: 2px solid $bright-sky-blue-two
         &[type="tel"]:invalid
           border-bottom: 2px solid #fc6466
       label
@@ -82,6 +82,17 @@
       .selectize-dropdown .active
         background: $white
         color: $bright-sky-blue-two
+    .form__select
+      border: 0
+      label
+        color: $white
+      .selectize-input.dropdown-active::before
+        display: none
+      .selectize-input
+        border-bottom: 2px solid $white
+        padding-top: 8px
+      .focus
+        border-bottom: 2px solid $bright-sky-blue-two
     .btn
       width: 100%
       margin: 35px 0
