@@ -136,14 +136,20 @@ h1
   width: calc(100% - 15px)
   margin-bottom: 30px
   +center-column
+  position: relative
+  &__link
+    position: absolute
+    width: 100%
+    height: 100%
+    z-index: 9
   +r(1024)
     width: 100%
     margin-right: 0
   &:hover
     background: $seafoam-blue
-    h3, p, a
+    h3, p, .btn
       color: $white
-    a
+    .btn
       border: 2px solid $white
   &__img
     overflow: hidden
@@ -164,10 +170,12 @@ h1
     margin-top: 15px
     margin-bottom: 60px
     +tr
-  a
+  a.btn
     width: 100%
     padding: 0
     border: 2px solid $seafoam-blue
+    position: relative
+    z-index: 10
 
 
 
