@@ -4,6 +4,8 @@ body
   font-size: 18px
   box-sizing: border-box
   position: relative
+body.active
+  overflow: hidden
 
 .container
   width: 100% !important
@@ -16,7 +18,8 @@ a
   transition: all 0.3s
 .flex
   display: flex
-
+.out
+  overflow: hidden
 .heading
   margin-bottom: 50px
   +r(767)

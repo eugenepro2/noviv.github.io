@@ -29,8 +29,8 @@ $('.scroll').on('click','a', function(event) {
 $('.menu-open').on('click', function() {
   $(this).toggleClass('active');
   $('.header').toggleClass('active');
-  $('.body').fadeToggle();
   $('.menu').fadeToggle();
+  $('body').toggleClass('active');
 });
 
 //select

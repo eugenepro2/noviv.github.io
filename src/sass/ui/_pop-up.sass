@@ -115,13 +115,15 @@
 
 .menu
   width: 100%
-  position: relative
-  margin-top: -80px
+  top: 0
+  position: fixed
   left: 0
   background-image: linear-gradient(310deg, $bright-sky-blue-two, #00d6ff)
   z-index: 5
   display: none
-  padding: 115px 15px 35px
+  padding: 115px 0 0
+  height: 100%
+  overflow-y: scroll
   ul
     border-bottom: 2px solid rgba($white, 0.4)
   li
@@ -133,6 +135,7 @@
       text-align: center
       color: $white
   &__contacts
+    padding: 0 15px 35px
     .btn
       width: 100%
       margin: 35px 0
