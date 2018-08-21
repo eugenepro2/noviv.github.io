@@ -138,6 +138,14 @@ h1
   margin-bottom: 30px
   +center-column
   position: relative
+  &:hover
+    background: $seafoam-blue
+    h3
+      color: $white
+    p
+      color: rgba(255, 255, 255, 0.52)
+    a.btn
+      border: solid 2px $white
   a:first-child
     display: flex
     align-items: center
@@ -145,6 +153,28 @@ h1
     &__link
       position: absolute
       width: 100%
+  &__img
+    width: 200px
+    height: 200px
+    border-radius: 100%
+    overflow: hidden
+  img
+    width: 100%
+  h3
+    font-size: 24px
+    text-align: center
+    color: $black
+    padding-top: 50px
+    +tr
+  p
+    font-size: 18px
+    text-align: center
+    color: rgba(0, 0, 0, 0.41)
+    padding-top: 10px
+    padding-bottom: 60px
+    +tr
+  a.btn
+    border: solid 2px $seafoam-blue
 
 
 .reviews__form .form__select .selectize-input .item
