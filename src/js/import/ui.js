@@ -53,13 +53,15 @@ $('.open-dropdown').on('click', function(event) {
 
 $('.footer__services__block .open').on('click', function(event) {
   event.preventDefault();
-  if($(this).hasClass('active')) {
-    $(this).find('span').text('Развернуть');
-  } else {
-    $(this).find('span').text('Свернуть');
+  if($(this).prev().hasClass('none')) {
+    if($(this).hasClass('active')) {
+      $(this).find('span').text('Развернуть');
+    } else {
+      $(this).find('span').text('Свернуть');
+    }
+    $(this).prev('.none').slideToggle();
+    $(this).toggleClass('active');
   }
-  $(this).prev().slideToggle();
-  $(this).toggleClass('active');
 });
 
 
