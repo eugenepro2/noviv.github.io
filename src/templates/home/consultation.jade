@@ -11,12 +11,9 @@ section.home-consultation
           .form__input
             label(for="tel") Телефон
             input(type="tel" id="tel" placeholder="Телефон").phone
-          .form__select
-            label Желаемая дата
-            select
-              option(value="1") __/__/____
-              option(value="2") 11/11/2018
-              option(value="3") 13/01/2018
+          .form__input
+            label(for="date") E-mail
+            input(type="text" id="date" placeholder="E-mail")
           input(type="submit" value="Запись на консультацию").btn.btn-blue
           .form__checkbox
             input(type="checkbox" id="checkbox")
