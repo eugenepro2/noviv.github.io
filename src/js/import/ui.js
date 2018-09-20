@@ -2,6 +2,54 @@ import '../lib/selectize.min.js';
 import '../lib/maskedinput.js';
 import modal from 'jquery-modal';
 import '@fancyapps/fancybox';
+import '../lib/jquery.inputmask.js';
+
+$(document).ready(function() {
+
+  $('#date').inputmask({
+    mask: 'D/M',
+    placeholder: 'дд.мм',
+    definitions: {
+      'M': {
+        validator: function(chrs, buffer, pos, strict, opts) {
+          var valExp = new RegExp('0[1-9]|1[0-2]');
+          return valExp.test(chrs);
+        },
+        cardinality: 2,
+        prevalidator: [
+          { validator: '[01]', cardinality: 1 },
+          { validator: '0[1-9]', cardinality: 2 },
+          { validator: '1[012]', cardinality: 2 },
+        ]
+      },
+      'D': {
+        validator: function(chrs, buffer, pos, strict, opts) {
+          var valExp2 = new RegExp('0[1-9]|[12][0-9]|3[01]');
+          return valExp2.test(chrs);
+        },
+        cardinality: 2,
+        prevalidator: [
+          { validator: '[0-3]', cardinality: 1 },
+          { validator: '0[1-9]', cardinality: 2 },
+          { validator: '(1|2)[0-9]', cardinality: 2 },
+          { validator: '3[01]', cardinality: 2 },
+        ]
+      },
+    }
+  });
+
+});
+
+
+
+// $('#date').inputmask('99-9999999'); 
+//mask input
+$('.phone').mask('+7 (999) 999-99-99');
+//mask input
+// $('#date').mask('99/99/2099');
+
+
+
 
 
 $('textarea')
@@ -36,10 +84,6 @@ $('.menu-open').on('click', function() {
 //select
 $('select').selectize();
 
-//mask input
-$('.phone').mask('+7 (999) 999-99-99');
-//mask input
-$('#date').mask('99/99/2099');
 
 
 //footer
