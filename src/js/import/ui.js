@@ -99,9 +99,9 @@ $('.footer__services__block .open').on('click', function(event) {
   event.preventDefault();
   if($(this).prev().hasClass('none')) {
     if($(this).hasClass('active')) {
-      $(this).find('span').text('Развернуть');
+      $(this).find('span').text('Expand');
     } else {
-      $(this).find('span').text('Свернуть');
+      $(this).find('span').text('Collapse');
     }
     $(this).prev('.none').slideToggle();
     $(this).toggleClass('active');
@@ -115,8 +115,8 @@ $('[data-service-list]').on('click', function(event) {
   $(this).prev().toggleClass('active');
   $(this).toggleClass('active');
   if($(this).hasClass('active')) {
-    $(this).find('span').text('Свернуть цены');
+    $(this).find('span').text('Collapse price');
   } else {
-    $(this).find('span').text('Развернуть цены');
+    $(this).find('span').text('Expand price');
   }
 });
